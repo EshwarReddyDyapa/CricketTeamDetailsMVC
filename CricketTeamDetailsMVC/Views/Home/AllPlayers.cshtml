@@ -1,5 +1,12 @@
-﻿@model List<SpResult>
+﻿@{
+    //Layout = "~/Views/Shared/_testLayout.cshtml"; //To specify custom layout
+}
+@model List<SpResult>
 @{
+    <div class="container-md mx-3 my-3">
+        <button class="btn btn-outline-dark">Add New</button>
+    </div>
+    <div class="container-md mx-3 my-3">
     <table class="table">
         <thead>
         <th>Id</th>
@@ -27,4 +34,5 @@
             </tbody>
         }
     </table>
+    </div>
 }
