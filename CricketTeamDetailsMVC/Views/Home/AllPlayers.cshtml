@@ -1,0 +1,30 @@
+﻿@model List<SpResult>
+@{
+    <table class="table">
+        <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Height</th>
+        <th>Salary</th>
+        <th>Locality</th>
+        <th>EDIT</th>
+        </thead>
+        @foreach (var p in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@p.PlayerId</td>
+                    <td>@p.PlayerName</td>
+                    <td>@p.PlayerRole</td>
+                    <td>@p.PlayerHeight</td>
+                    <td>@p.PlayerSalary</td>
+                    <td>@p.PlayerLocality</td>
+                    <td>
+                        <button class="btn btn-sm">Test</button>
+                    </td>
+                </tr>
+            </tbody>
+        }
+    </table>
+}
